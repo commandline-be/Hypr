@@ -71,8 +71,6 @@
         free(name);                          \
         return;                              \
     }                                        \
-    free(error##name);
-
 
 #define VECTORDELTANONZERO(veca, vecb) (abs(veca.x - vecb.x) > 0.4f || abs(veca.y - vecb.y) > 0.4f)
 #define VECTORDELTAMORETHAN(veca, vecb, delta) (abs(veca.x - vecb.x) > (delta) || abs(veca.y - vecb.y) > (delta))
